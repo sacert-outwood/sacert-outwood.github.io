@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+  "name": "St. Anselm's College Heritage and Historical Society",
+  "short_name": "Outwood",
+  "start_url": "https://sacert-outwood.herokuapp.com//index.html",
+  "scope": "https://sacert-outwood.herokuapp.com//index.html",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#e7c79b",
+  "description": "St. Anselm's College Heritage and Historical Society",
+  "icons": [
+    {
+      "src": "images/icons/icon-36.png",
+      "sizes": "36x36",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "images/icons/icon-48.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "images/icons/icon-72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "images/icons/icon-96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "images/icons/icon-144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "images/icons/icon-168.png",
+      "sizes": "168x168",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "images/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "images/icons/icon-256.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "images/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "About",
+      "short_name": "About",
+      "description": "About",
+      "url": "https://sacert-outwood.herokuapp.com//about.html"
+    },
+    {
+      "name": "Home",
+      "short_name": "Home",
+      "description": "Home",
+      "url": "https://sacert-outwood.herokuapp.com//index.html"
+    },
+    {
+      "name": "Contact",
+      "short_name": "Contact",
+      "description": "Contact",
+      "url": "https://sacert-outwood.herokuapp.com//contact.html"
+    }
+  ],
+  "categories": [
+    "Education",
+    "Government",
+    "Health",
+    "Science",
+    "Society",
+    "Travel"
+  ],
+  "languages": [
+    "en-GB"
+  ]
+}

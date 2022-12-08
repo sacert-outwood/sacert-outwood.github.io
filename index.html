@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>St. Anselm's College Heritage and Historical Research Society</title>
+    <link rel="stylesheet" href="css/style.css" media="screen">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="manifest.json">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="St. Anselm's College Heritage and Historical Research Society">
+    <meta name="keywords" content="St. Anselm's College, Heritage, Historical, Research, Society">
+    <meta name="theme-color" content="#f5f5f5">
+    <meta name="msapplication-navbutton-color" content="#f5f5f5">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#f5f5f5">
+    <link rel="apple-touch-icon" href="images/logo.webp">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="St. Anselm's College Heritage and Historical Research Society">
+    <link rel="apple-touch-startup-image" href="images/logo.webp">
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('serviceWorker.js').then(function(registration) {
+                console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            }).catch(function(err) {
+                console.log('ServiceWorker registration failed: ', err);
+            });
+        }
+    </script>
+</head>
+<body>
+    <header>
+<!--        Logo-->
+        <img src="images/logo.webp" alt="logo" width="100px" height="100px">
+<!--        Home, About, The Outwood Story, Outwood House, The History of St Anselm, More-->
+        <h1>
+            St. Anselm's College Heritage and Historical Research Society
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="thestoryofoutwood.html">The Story of Outwood</a></li>
+                <li><a href="historyof.html">History of...</a></li>
+                <li><a href="phasetwo.html">Phase Two</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article class="home">
+        <a href="thestoryofoutwood.html#virtual-tour">
+            <img src="images/IMG_0839.webp" alt="image">
+            <h2>Virtual Tour</h2>
+            <p>
+                Take a virtual video tour of the Outwood House.
+            </p>
+        </a>
+        <a href="pdfs/theoutwoodstory.pdf">
+            <img src="images/IMG_0874.webp" alt="image">
+            <h2>The History of Outwood</h2>
+            <p>
+                Read our book on the history of Outwood House.
+            </p>
+        </a>
+        <a href="phasetwo.html">
+            <img src="images/phase_two.webp" alt="image">
+            <h2>Phase Two</h2>
+            <p>
+                Learn more about phase two of the Outwood House restoration project.
+            </p>
+        </a>
+    </article>
+    <footer>
+        <div>
+            <img src="/images/HLF.webp" alt="Heritage Lottery Fund" width="300" height="200">
+            <img src="images/CDF.webp" alt="Community Development Fund" width="300" height="200">
+        </div>
+        <h3>
+            St. Anselm's College Heritage and Historical Research Society
+        </h3>
+        <p>
+            &copy; Copyright 2022 St. Anselm's College Heritage and Historical Research Society
+        </p>
+    </footer>
+</body>
+</html>
