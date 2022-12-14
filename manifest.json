@@ -2,8 +2,8 @@
   "$schema": "https://json.schemastore.org/web-manifest-combined.json",
   "name": "St. Anselm's College Heritage and Historical Society",
   "short_name": "Outwood",
-  "start_url": "https://sacert-outwood.herokuapp.com//index.html",
-  "scope": "https://sacert-outwood.herokuapp.com//index.html",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#fff",
   "theme_color": "#e7c79b",
@@ -69,19 +69,19 @@
       "name": "About",
       "short_name": "About",
       "description": "About",
-      "url": "https://sacert-outwood.herokuapp.com//about.html"
+      "url": "about.html"
     },
     {
       "name": "Home",
       "short_name": "Home",
       "description": "Home",
-      "url": "https://sacert-outwood.herokuapp.com//index.html"
+      "url": "index.html"
     },
     {
       "name": "Contact",
       "short_name": "Contact",
       "description": "Contact",
-      "url": "https://sacert-outwood.herokuapp.com//contact.html"
+      "url": "contact.html"
     }
   ],
   "categories": [
