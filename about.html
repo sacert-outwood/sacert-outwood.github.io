@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" href="images/favicon.png" type="image/png">
     <link rel="manifest" href="manifest.json">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="St. Anselm's College Heritage and Historical Research Society">
@@ -25,16 +25,14 @@
             navigator.serviceWorker.register('serviceWorker.js').then(function(registration) {
                 console.log('ServiceWorker registration successful with scope: ', registration.scope);
             }).catch(function(err) {
-                console.log('ServiceWorker registration failed: ', err);
+                console.error('ServiceWorker registration failed: ', err);
             });
         }
     </script>
 </head>
 <body>
     <header>
-        <!--        Logo-->
         <img src="images/logo.webp" alt="logo" width="100px" height="100px">
-        <!--        Home, About, The Outwood Story, Outwood House, The History of St Anselm, More-->
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -120,9 +118,9 @@
             leaders have visited them. The family members were able
             to provide much detailed information about their
             ancestors. They very kindly loaned us a copy of the private
-            family history, “Records of the Family of Heape”, one of
-            only five, which had been researched by family members
-            and printed in 1904.
+            family history, “Records of the Family of Heape”, <s>one of
+            only five</s><a href="#footnote-1">[1]</a>, which had been 
+            researched by family members and printed in 1904.
         </p>
         <p>
             Contrary to what we originally understood, it has
@@ -164,17 +162,19 @@
             number of years to present in a compendium the consolidated
             story of all the users and usages of Outwood House.
         </p>
+        <p id="footnote-1">[1] Although the site previously stated that only five copies of the Heape family record book exist, 
+            <q>I believe that at least 20 or so were printed overall</q>, wrote <cite>Chris Lumsden, a Heape family descendant from Melbourne, Australia.</cite></p>
     </article>
     <footer>
-        <div>
-            <img src="/images/HLF.webp" alt="Heritage Lottery Fund" width="300" height="200">
-            <img src="images/CDF.webp" alt="Community Development Fund" width="300" height="200">
+        <div class="images">
+            <img src="/images/HLF.webp" alt="Heritage Lottery Fund" style="height: 200px; object-fit: contain;">
+            <img src="/images/CDF.webp" alt="Community Development Fund" style="height: 200px; object-fit: contain;">
         </div>
         <h2>
             St. Anselm's College Heritage and Historical Research Society
         </h2>
         <p>
-            &copy; Copyright 2022 St. Anselm's College Heritage and Historical Research Society
+            &copy; Copyright 2025 St. Anselm's College Heritage and Historical Research Society
         </p>
     </footer>
 </body>
