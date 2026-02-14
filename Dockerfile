@@ -1,11 +1,13 @@
 FROM golang:1.22-alpine AS builder
 
 WORKDIR /app
+
+COPY go.mod go.sum ./
+RUN go mod download
+
 COPY . .
 
-RUN go mod init static-server || true
-RUN go mod tidy || true
-RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o server main.go
+RUN go build -o server main.go
 
 FROM alpine:3.19
 
