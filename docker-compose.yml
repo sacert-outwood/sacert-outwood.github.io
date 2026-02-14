@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  sacert-outwood-service:
+    build: .
+    container_name: sacert-outwood
+    ports:
+      - "8080:8080"
+    environment:
+      - PORT=8080
+      - STATIC_DIR=./static
+    volumes:
+      - ./static:/app/static
+    restart: unless-stopped
