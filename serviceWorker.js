@@ -1,12 +1,4 @@
-// Simple service worker for caching the app's assets
-// Language: javascript
-// Path: public/js/serviceWorker.js
-
-
-// This is the service worker with the Cache-first network
-// strategy:
-
-
+// This is a service worker with a cache-first strategy
 let cacheName = 'cache-v1';
 let filesToCache = [
     'index.html',
@@ -79,36 +71,34 @@ let filesToCache = [
     'images/phase_two.webp'
 ];
 
-self.addEventListener('install', function(event) {
-    // Perform install steps
+self.addEventListener('install', function (event) {
     event.waitUntil(
         caches.open(cacheName)
-        .then(function(cache) {
-            console.log('Opened cache');
-            return cache.addAll(filesToCache);
-        })
+            .then(function (cache) {
+                console.log('Opened cache');
+                return cache.addAll(filesToCache);
+            })
     );
 });
-self.addEventListener('fetch', function(event) {
+self.addEventListener('fetch', function (event) {
     event.respondWith(
         caches.match(event.request)
-        .then(function(response) {
-            // Cache hit - return response
-            if (response) {
-                return response;
+            .then(function (response) {
+                if (response) {
+                    return response;
+                }
+                return fetch(event.request);
             }
-            return fetch(event.request);
-        }
-    ));
+            ));
 });
-self.addEventListener('activate', function(event) {
+self.addEventListener('activate', function (event) {
     event.waitUntil(
-        caches.keys().then(function(cacheNames) {
+        caches.keys().then(function (cacheNames) {
             return Promise.all(
-                cacheNames.filter(function(cacheName) {
+                cacheNames.filter(function (cacheName) {
                     return cacheName.startsWith('cache-') &&
                         cacheName !== cacheName;
-                }).map(function(cacheName) {
+                }).map(function (cacheName) {
                     return caches.delete(cacheName);
                 }));
         })
