@@ -36,7 +36,7 @@ let filesToCache = [
     'images/icons/icon-192.png',
     'images/icons/icon-256.png',
     'images/icons/icon-512.png',
-    'videos/virtual_tour_compressed.mp4',
+    'videos/virtual_tour.mp4',
     'images/features/IMG_0842.webp',
     'images/features/IMG_0857.webp',
     'images/features/IMG_0972.webp',
