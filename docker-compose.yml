@@ -12,6 +12,8 @@ services:
     volumes:
       - ./static:/app/static
     restart: unless-stopped
+    networks:
+      - nginxproxymanager
 networks:
   nginxproxymanager:
     external: true
