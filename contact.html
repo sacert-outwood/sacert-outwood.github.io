@@ -59,8 +59,11 @@
             St. Anselm's College Heritage and Historical Research Society
         </h2>
         <p>
-            &copy; Copyright 2025 St. Anselm's College Heritage and Historical Research Society
+            &copy; Copyright <span id="year"></span> St. Anselm's College Heritage and Historical Research Society
         </p>
     </footer>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
