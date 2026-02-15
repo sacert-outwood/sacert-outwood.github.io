@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url><loc>https://sacert-outwood.org/</loc></url>
   <url><loc>https://sacert-outwood.org/about.html</loc></url>
   <url><loc>https://sacert-outwood.org/contact.html</loc></url>
   <url><loc>https://sacert-outwood.org/history-of.html</loc></url>
   <url><loc>https://sacert-outwood.org/phase-two.html</loc></url>
-  <url><loc>https://sacert-outwood.org/the-story-of-outwood.html</loc></url>
+  <url>
+    <loc>https://sacert-outwood.org/the-story-of-outwood.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://sacert-outwood.org/images/features/IMG_0842.webp</video:thumbnail_loc>
+      <video:title>Virtual Tour</video:title>
+      <video:description>A virtual tour filmed in Outwood House</video:description>
+      <video:content_loc>https://sacert-outwood.org/videos/virtual_tour.mp4</video:content_loc>
+      <video:duration>287</video:duration>
+    </video:video>
+  </url>
 </urlset>
