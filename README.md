@@ -10,6 +10,7 @@ Go 1.24+
 
 ### Instructions
 
+1. copy .env.example to new .env file `cp .env.example .env`
 1. Run command `go run main.go`
 2. Then open `http://localhost:8080`
 
